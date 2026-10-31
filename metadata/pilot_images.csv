@@ -1,0 +1,4 @@
+image_id,split,purpose
+I001,dev,single egg / basic prompt
+I007,dev,clutter or difficult lighting
+I050,dev,multiple visible eggs

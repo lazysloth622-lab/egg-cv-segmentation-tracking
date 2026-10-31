@@ -1,0 +1,172 @@
+{
+  "image_id": "I052",
+  "split": "dev",
+  "relative_path": "train/egg/not_damaged_105_jpg.rf.6b94b57d4e4cb521abbec55bb95c2a76.jpg",
+  "raw_sha256": "09097f7253d602d8569540adaa065814215b16ccaa586852f35a9a8a2d042596",
+  "status": "reviewed",
+  "reviewed_at": "2026-10-29T09:49:58.600313+00:00",
+  "label_policy": "visible_egg_pixels_only_v1",
+  "instances": [
+    {
+      "instance_index": 1,
+      "area": 18696,
+      "bbox_xyxy": [
+        320,
+        131,
+        478,
+        283
+      ],
+      "prompt": {
+        "source": "human_selected_SAM_grid_candidate",
+        "point_coords": [
+          [
+            398.0,
+            205.0
+          ]
+        ],
+        "point_labels": [
+          1
+        ],
+        "box_xyxy": [
+          320.0,
+          132.0,
+          478.0,
+          283.0
+        ],
+        "grid_candidate_point_coords": [
+          [
+            420.0,
+            260.0
+          ]
+        ],
+        "candidate_predicted_iou": 1.0097451210021973,
+        "candidate_stability_score": 0.9937006235122681,
+        "selected_output_index": 0,
+        "refined_mask_score": 0.9963850378990173,
+        "seed_agreement_iou": 0.9978080727078321
+      }
+    },
+    {
+      "instance_index": 2,
+      "area": 19143,
+      "bbox_xyxy": [
+        414,
+        280,
+        595,
+        418
+      ],
+      "prompt": {
+        "source": "human_selected_SAM_grid_candidate",
+        "point_coords": [
+          [
+            514.0,
+            344.0
+          ]
+        ],
+        "point_labels": [
+          1
+        ],
+        "box_xyxy": [
+          414.0,
+          279.0,
+          595.0,
+          417.0
+        ],
+        "grid_candidate_point_coords": [
+          [
+            460.0,
+            300.0
+          ]
+        ],
+        "candidate_predicted_iou": 1.0190632343292236,
+        "candidate_stability_score": 0.9912198781967163,
+        "selected_output_index": 1,
+        "refined_mask_score": 1.0027574300765991,
+        "seed_agreement_iou": 0.9984865880388268
+      }
+    },
+    {
+      "instance_index": 3,
+      "area": 37498,
+      "bbox_xyxy": [
+        321,
+        132,
+        595,
+        417
+      ],
+      "prompt": {
+        "source": "human_selected_SAM_grid_candidate",
+        "point_coords": [
+          [
+            395.0,
+            206.0
+          ]
+        ],
+        "point_labels": [
+          1
+        ],
+        "box_xyxy": [
+          321.0,
+          132.0,
+          595.0,
+          417.0
+        ],
+        "grid_candidate_point_coords": [
+          [
+            420.0,
+            380.0
+          ]
+        ],
+        "candidate_predicted_iou": 0.8905089497566223,
+        "candidate_stability_score": 0.967574417591095,
+        "selected_output_index": 1,
+        "refined_mask_score": 1.004551887512207,
+        "seed_agreement_iou": 0.9898265466039791
+      }
+    },
+    {
+      "instance_index": 4,
+      "area": 20617,
+      "bbox_xyxy": [
+        28,
+        373,
+        246,
+        496
+      ],
+      "prompt": {
+        "source": "human_selected_SAM_grid_candidate",
+        "point_coords": [
+          [
+            142.0,
+            434.0
+          ]
+        ],
+        "point_labels": [
+          1
+        ],
+        "box_xyxy": [
+          28.0,
+          373.0,
+          246.0,
+          496.0
+        ],
+        "grid_candidate_point_coords": [
+          [
+            220.0,
+            460.0
+          ]
+        ],
+        "candidate_predicted_iou": 1.0146554708480835,
+        "candidate_stability_score": 0.9911937117576599,
+        "selected_output_index": 1,
+        "refined_mask_score": 1.002943992614746,
+        "seed_agreement_iou": 0.9970424242424243
+      }
+    }
+  ],
+  "union_area": 58458,
+  "mask_sha256": "9fff4cbbcf325baf30dfcc67c2059c318446352506c45c4a0113224a121a334d",
+  "instance_mask_sha256": "805221153a507a761d46b1c221f1cbe999ba49ffc2eef99f2e603732a9a373d5",
+  "mask_relative_path": "references/masks/I052.png",
+  "instance_mask_relative_path": "references/instances/I052.png"
+}

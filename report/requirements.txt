@@ -1,0 +1,11 @@
+# Use Colab's compatible preinstalled torch/torchvision; exact versions are in metadata/sam_environment.json
+numpy
+pandas
+Pillow
+requests
+matplotlib
+opencv-python
+ipywidgets
+reportlab
+pypdf
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git@dca509fe793f601edb92606367a655c15ac00fdf

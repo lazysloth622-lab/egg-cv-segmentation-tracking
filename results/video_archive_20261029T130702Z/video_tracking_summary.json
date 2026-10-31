@@ -1,0 +1,89 @@
+{
+  "status": "FULL_VIDEO_TRACKED",
+  "created_at": "2026-10-29T13:00:52.372433+00:00",
+  "source_video_name": "Raw-and-Boiled-SnapYT.App.mp4",
+  "source_video_sha256": "0445f60f2adf569e3ba47b3ece43bccb37c16581f032137b78cff5f5a6f349a9",
+  "fps": 24.0,
+  "width": 1920,
+  "height": 1080,
+  "frames": 1440,
+  "candidate_segments": 2,
+  "segments": [
+    {
+      "segment_id": "S000",
+      "start_frame": 0,
+      "end_frame": 221,
+      "start_seconds": 0.0,
+      "end_seconds": 9.208333333333334
+    },
+    {
+      "segment_id": "S001",
+      "start_frame": 221,
+      "end_frame": 1440,
+      "start_seconds": 9.208333333333334,
+      "end_seconds": 60.0
+    }
+  ],
+  "cut_detection": {
+    "hist_threshold": 0.25,
+    "mad_threshold": 22.0,
+    "hard_mad": 55.0,
+    "note": "Candidate cuts only; user confirms boxes at each segment."
+  },
+  "frames_processed": 1440,
+  "track_rows": 2438,
+  "lost_object_frames": 205,
+  "out_of_scene_object_frames": 870,
+  "actual_tracker": "detection_gated_hsv",
+  "object_ids": [
+    "boiled",
+    "raw"
+  ],
+  "assignment_counts": {
+    "2": 582,
+    "1": 199,
+    "0": 3
+  },
+  "object_stats": {
+    "raw": {
+      "tracked": 647,
+      "initialized": 0,
+      "not_detected": 137,
+      "out_of_scene": 435,
+      "first_visible_frame": 221,
+      "last_visible_frame": 1003
+    },
+    "boiled": {
+      "tracked": 716,
+      "initialized": 0,
+      "not_detected": 68,
+      "out_of_scene": 435,
+      "first_visible_frame": 221,
+      "last_visible_frame": 998
+    }
+  },
+  "detector_config": {
+    "processing_width": 960,
+    "hsv_v_min": 170,
+    "hsv_s_max": 90,
+    "open_kernel": 3,
+    "close_kernel": 3,
+    "green_fraction_max": 0.2,
+    "min_center_y_fraction": 0.3,
+    "min_contour_area": 500,
+    "max_contour_area": 30000,
+    "min_aspect": 0.42,
+    "max_aspect": 1.7,
+    "min_extent": 0.4,
+    "min_solidity": 0.68,
+    "min_circularity": 0.3,
+    "min_area_ratio": 0.3,
+    "max_area_ratio": 4.0,
+    "reacquire_after_misses": 6
+  },
+  "identity_policy": "User assigns persistent labels at each candidate segment start; one-to-one temporal association preserves those IDs. No automatic raw/boiled recognition is claimed.",
+  "loss_policy": "not_detected and out_of_scene rows have blank coordinates; positions are not interpolated or fabricated. Green cards suppress boxes and status overlays.",
+  "audio": "OpenCV visualization contains no audio.",
+  "limitations": "Candidate cut detection may oversegment/undersegment. Detection mode is calibrated for light eggs on the supplied table/green-card video; hand occlusion can cause missed detections. Review the corrected playback for identity switches and false boxes before submission.",
+  "ai_assistance": "Tracking code developed with Arena.ai; user supplies boxes, executes and reviews the full result."
+}

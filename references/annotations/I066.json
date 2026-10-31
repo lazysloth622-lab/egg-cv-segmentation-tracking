@@ -1,0 +1,40 @@
+{
+  "image_id": "I066",
+  "split": "dev",
+  "relative_path": "valid/egg/not_damaged_119_jpg.rf.6758625c4b939166ca105d0509fc569e.jpg",
+  "raw_sha256": "7b205dea5d955350061ba81e8aa602bea1060e199617e8eb321df238743010b6",
+  "status": "reviewed",
+  "reviewed_at": "2026-10-29T10:32:26.137182+00:00",
+  "label_policy": "visible_egg_pixels_only_v1",
+  "instances": [
+    {
+      "instance_index": 1,
+      "area": 69944,
+      "bbox_xyxy": [
+        98,
+        213,
+        400,
+        514
+      ],
+      "prompt": {
+        "source": "human_box_prompt",
+        "point_coords": [],
+        "point_labels": [],
+        "box_xyxy": [
+          95.0,
+          200.0,
+          400.0,
+          510.0
+        ],
+        "selected_output_index": 1,
+        "refined_mask_score": 0.9953916668891907,
+        "runtime_device": "cpu"
+      }
+    }
+  ],
+  "union_area": 69944,
+  "mask_sha256": "1122d20130b60d8e80669e529653951217288397aa57b2117f4f867cf0013df1",
+  "instance_mask_sha256": "0f713b844182bea908282abdad4e25c66351388ac73e4bb9baf4fefa8652e0a3",
+  "mask_relative_path": "references/masks/I066.png",
+  "instance_mask_relative_path": "references/instances/I066.png"
+}

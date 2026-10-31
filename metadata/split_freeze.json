@@ -1,0 +1,59 @@
+{
+  "status": "FROZEN_BEFORE_SEGMENTATION_EXPERIMENTS",
+  "approval": "Explicit interactive APPROVE; visual families, not independently verified capture identities.",
+  "seed": 42,
+  "algorithm": "Uniform draw from whole-group subsets summing to 22, using DP counts and Python random.Random(42). No outcomes or difficulty scores used.",
+  "valid_group_subsets": 345,
+  "dataset_fingerprint": "cdb04474e1663283b6848cb1efea5a248b34f505cd1d98ab85898075ed07521c",
+  "input_manifest_sha256": "dfed2b968a1823295ab7384a8b259ee1ae95ecfbefd5549041dcd869fb4fb83f",
+  "draft_groups_sha256": "234ef8df787552c43d3f386fca2b817e4a06f36785a082b1633d828dc6ca7453",
+  "draft_policy_sha256": "2567b7468d78180014790316f5806d0b64b1901b6ba5b7ceaa7ba76ec97d0bec",
+  "dev_count": 88,
+  "eval_count": 22,
+  "dev_groups": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G11",
+    "G14"
+  ],
+  "eval_groups": [
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10",
+    "G12",
+    "G13"
+  ],
+  "group_sizes": {
+    "G01": 5,
+    "G02": 9,
+    "G03": 6,
+    "G04": 4,
+    "G05": 3,
+    "G06": 4,
+    "G07": 3,
+    "G08": 6,
+    "G09": 2,
+    "G10": 2,
+    "G11": 58,
+    "G12": 3,
+    "G13": 2,
+    "G14": 3
+  },
+  "file_sha256": {
+    "scene_groups.csv": "5f7a7cb3675590d82ccb9425114184b26207b8f3ef3ddc2e973605832e157810",
+    "split.csv": "04321e64df5e42c29da7001767dccab9cc9c1abafacf8e3ea4431dcb8e8efa32",
+    "pilot_images.csv": "ab7433769bd0a13e6bba9aaf36d0cdf2b652c4add9408c8e496485f139d93dd9"
+  },
+  "limitations": [
+    "No verified session, person or physical-egg identities; cross-group physical-egg reuse cannot be ruled out.",
+    "Some connections are provisional, especially G01, G07, G10, G13 and the broader kitchen family.",
+    "G11 has 58 images and all clearly visible multiple-egg scenes in the reviewed contact sheets. A 22-image whole-group eval cannot include G11; report limited held-out instance-count/scene coverage."
+  ],
+  "reference_policy": "Label and quality-check all 110 originals using one fixed visible-egg policy. Do not tune classical parameters on eval or pass reference prompts to classical inference.",
+  "ai_assistance": "Code and draft grouping developed with Arena.ai; user review and real execution required. Disclose assistance in the final report."
+}

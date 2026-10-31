@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-10-29T11:44:12.623404+00:00",
+  "finished_utc": "2026-10-29T12:00:18.272164+00:00",
+  "dev_images": 88,
+  "eval_images_read": 0,
+  "trial_count": 16,
+  "failures": [],
+  "selected_config_id": "C08_grabcut_center",
+  "python": "3.13.18",
+  "opencv": "5.0.0",
+  "numpy": "2.1.3",
+  "elapsed_seconds": 965.6487982273102
+}

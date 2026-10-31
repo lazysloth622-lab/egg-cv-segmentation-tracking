@@ -1,0 +1,94 @@
+{
+  "image_id": "I036",
+  "split": "dev",
+  "relative_path": "train/egg/not_damaged_42_jpg.rf.6626de5325fbf9ad4fec739b2a4e29f3.jpg",
+  "raw_sha256": "fd3280b14d5d99c3d8525b4510af9188baa60821609b0077066ed35f362ceebf",
+  "status": "reviewed",
+  "reviewed_at": "2026-10-29T09:42:17.363175+00:00",
+  "label_policy": "visible_egg_pixels_only_v1",
+  "instances": [
+    {
+      "instance_index": 1,
+      "area": 17783,
+      "bbox_xyxy": [
+        158,
+        23,
+        347,
+        147
+      ],
+      "prompt": {
+        "source": "human_selected_SAM_grid_candidate",
+        "point_coords": [
+          [
+            273.0,
+            85.0
+          ]
+        ],
+        "point_labels": [
+          1
+        ],
+        "box_xyxy": [
+          159.0,
+          23.0,
+          347.0,
+          147.0
+        ],
+        "grid_candidate_point_coords": [
+          [
+            220.0,
+            100.0
+          ]
+        ],
+        "candidate_predicted_iou": 0.944462776184082,
+        "candidate_stability_score": 0.9506132006645203,
+        "selected_output_index": 1,
+        "refined_mask_score": 0.9725180864334106,
+        "seed_agreement_iou": 0.9920448179271709
+      }
+    },
+    {
+      "instance_index": 2,
+      "area": 1660,
+      "bbox_xyxy": [
+        128,
+        88,
+        175,
+        158
+      ],
+      "prompt": {
+        "source": "human_selected_SAM_grid_candidate",
+        "point_coords": [
+          [
+            149.0,
+            135.0
+          ]
+        ],
+        "point_labels": [
+          1
+        ],
+        "box_xyxy": [
+          127.0,
+          89.0,
+          175.0,
+          158.0
+        ],
+        "grid_candidate_point_coords": [
+          [
+            140.0,
+            100.0
+          ]
+        ],
+        "candidate_predicted_iou": 0.9108808040618896,
+        "candidate_stability_score": 0.9531435370445251,
+        "selected_output_index": 1,
+        "refined_mask_score": 0.9504327178001404,
+        "seed_agreement_iou": 0.9784431137724551
+      }
+    }
+  ],
+  "union_area": 19443,
+  "mask_sha256": "16ea05853a35a0bc74473e7b2c16c481b4ebfcd9dd76e2c97a99d391b9acd66d",
+  "instance_mask_sha256": "25f64af541bd28a85fc83740a60b57260121d086794b71e6e717f4f367049067",
+  "mask_relative_path": "references/masks/I036.png",
+  "instance_mask_relative_path": "references/instances/I036.png"
+}

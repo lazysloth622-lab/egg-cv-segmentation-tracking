@@ -1,0 +1,15 @@
+{
+  "image_id": "I071",
+  "split": "dev",
+  "relative_path": "train/egg/not_damaged_124_jpg.rf.931f62b8d40a093039633b898e0e9114.jpg",
+  "raw_sha256": "1bd71bc3ec67a6f05019dfe205648d754fc4a2690ebf414c9b55739e96a9056b",
+  "status": "reviewed_empty",
+  "reviewed_at": "2026-10-29T10:41:08.054930+00:00",
+  "label_policy": "visible_egg_pixels_only_v1",
+  "instances": [],
+  "union_area": 0,
+  "mask_sha256": "8262cd6f839c5f0b60f3534ebd053b23594aaefc88f1bd094ffc370ce538cd99",
+  "instance_mask_sha256": "d9dd405478c5f5e202852bcc7dcec7bb45c35a053eed1647ef9c934de764a9f1",
+  "mask_relative_path": "references/masks/I071.png",
+  "instance_mask_relative_path": "references/instances/I071.png"
+}

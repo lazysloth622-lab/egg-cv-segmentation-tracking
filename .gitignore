@@ -1,0 +1,8 @@
+checkpoints/
+data/raw/
+data/video/
+*.part
+*.pth
+*.mp4
+.DS_Store
+__pycache__/

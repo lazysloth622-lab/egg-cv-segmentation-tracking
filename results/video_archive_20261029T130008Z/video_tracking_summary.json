@@ -1,0 +1,46 @@
+{
+  "status": "FULL_VIDEO_TRACKED",
+  "created_at": "2026-10-29T12:33:00.665240+00:00",
+  "source_video_name": "Raw-and-Boiled-SnapYT.App.mp4",
+  "source_video_sha256": "0445f60f2adf569e3ba47b3ece43bccb37c16581f032137b78cff5f5a6f349a9",
+  "fps": 24.0,
+  "width": 1920,
+  "height": 1080,
+  "frames": 1440,
+  "candidate_segments": 2,
+  "segments": [
+    {
+      "segment_id": "S000",
+      "start_frame": 0,
+      "end_frame": 221,
+      "start_seconds": 0.0,
+      "end_seconds": 9.208333333333334
+    },
+    {
+      "segment_id": "S001",
+      "start_frame": 221,
+      "end_frame": 1440,
+      "start_seconds": 9.208333333333334,
+      "end_seconds": 60.0
+    }
+  ],
+  "cut_detection": {
+    "hist_threshold": 0.25,
+    "mad_threshold": 22.0,
+    "hard_mad": 55.0,
+    "note": "Candidate cuts only; user confirms boxes at each segment."
+  },
+  "frames_processed": 1440,
+  "track_rows": 2438,
+  "lost_object_frames": 0,
+  "actual_tracker": "template_ncc",
+  "object_ids": [
+    "boiled",
+    "raw"
+  ],
+  "identity_policy": "User assigns persistent labels at each candidate segment start; no automatic raw/boiled recognition is claimed.",
+  "loss_policy": "Lost tracks are marked; coordinates are not interpolated or fabricated.",
+  "audio": "OpenCV visualization contains no audio.",
+  "limitations": "Candidate cut detection may oversegment/undersegment; manual segment boxes and lost frames require visual review. Long occlusions or identity ambiguities must be disclosed.",
+  "ai_assistance": "Tracking code developed with Arena.ai; user supplies boxes, executes and reviews the full result."
+}

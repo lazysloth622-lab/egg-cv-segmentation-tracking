@@ -1,0 +1,389 @@
+{
+  "policy_version": "visual_scene_family_v1_DRAFT",
+  "status": "DRAFT_REQUIRES_HUMAN_CONFIRMATION",
+  "dataset_fingerprint": "cdb04474e1663283b6848cb1efea5a248b34f505cd1d98ab85898075ed07521c",
+  "input_manifest_sha256": "dfed2b968a1823295ab7384a8b259ee1ae95ecfbefd5549041dcd869fb4fb83f",
+  "rule": "Keep connected visual capture contexts together; conservatively merge uncertain related views. Use scene_group_id, not scene_subgroup, for the future split.",
+  "review_source": "Visual inspection of all six contact sheets and selected original images from the inspected alternative dataset ZIP; raw hashes checked against the user's manifest.",
+  "limitations": [
+    "No verified session, person or physical-egg identities; cross-group physical-egg reuse cannot be ruled out.",
+    "Some connections are provisional, especially G01, G07, G10, G13 and the broader kitchen family.",
+    "G11 has 58 images and all clearly visible multiple-egg scenes in the reviewed contact sheets. A 22-image whole-group eval cannot include G11; report limited held-out instance-count/scene coverage.",
+    "No split, reference mask, classical prediction, experiment or metric is produced by this script."
+  ],
+  "ai_assistance": "Draft grouping and code prepared with Arena.ai assistance; human review pending; disclose assistance in the final report.",
+  "groups": [
+    {
+      "group_id": "G01",
+      "name": "Gray floor and handheld views",
+      "evidence": "I001, I002 and I021 have a similar handheld egg / gray-floor context. I023 and I039 are a clearly related gray-floor pair, merged into this family conservatively.",
+      "review_priority": "Check the floor-to-handheld link; it is a precaution, not a verified capture-session identity.",
+      "subgroups": [
+        {
+          "name": "Handheld gray-floor views",
+          "image_ids": [
+            "I001",
+            "I002",
+            "I021"
+          ],
+          "note": "Similar handheld context."
+        },
+        {
+          "name": "Egg on scratched gray floor",
+          "image_ids": [
+            "I023",
+            "I039"
+          ],
+          "note": "Matching floor marks and arrangement."
+        }
+      ]
+    },
+    {
+      "group_id": "G02",
+      "name": "Striped cloth and greenery tray",
+      "evidence": "I003-I006 share the distinctive blue/yellow striped cloth. I005-I006 show a greenery tray; cloth/tray cues also link the vegetation close-ups. Keep this connected setup together.",
+      "review_priority": "Check that all greenery and cloth views are represented; the merge is intentionally conservative.",
+      "subgroups": [
+        {
+          "name": "Striped cloth",
+          "image_ids": [
+            "I003",
+            "I004",
+            "I005",
+            "I006"
+          ],
+          "note": "Distinctive blue/yellow stripes; the tray is visible in the wider views."
+        },
+        {
+          "name": "Greenery / tray",
+          "image_ids": [
+            "I007",
+            "I008",
+            "I009",
+            "I010",
+            "I040"
+          ],
+          "note": "Repeated greenery and tray context, with cloth visible in wider views."
+        }
+      ]
+    },
+    {
+      "group_id": "G03",
+      "name": "Ash and charcoal surface",
+      "evidence": "Repeated ash / charcoal background and egg positioning within that material.",
+      "review_priority": "Check for any additional views of this ash/charcoal setup in another group.",
+      "subgroups": [
+        {
+          "name": "Ash / charcoal",
+          "image_ids": [
+            "I011",
+            "I022",
+            "I031",
+            "I035",
+            "I041",
+            "I045"
+          ],
+          "note": "Keep the clean and ash-covered views together."
+        }
+      ]
+    },
+    {
+      "group_id": "G04",
+      "name": "Multicolored patterned fabric",
+      "evidence": "Matching purple, yellow, red and green patterned fabric across different camera angles.",
+      "review_priority": "Check fabric-pattern matches rather than egg appearance.",
+      "subgroups": [
+        {
+          "name": "Patterned fabric",
+          "image_ids": [
+            "I012",
+            "I032",
+            "I043",
+            "I046"
+          ],
+          "note": "Same distinctive fabric design."
+        }
+      ]
+    },
+    {
+      "group_id": "G05",
+      "name": "Geometric mat with earphones",
+      "evidence": "Matching blue/brown geometric mat and white earphones.",
+      "review_priority": "Check that the earphone/mat views stay together.",
+      "subgroups": [
+        {
+          "name": "Mat / earphones",
+          "image_ids": [
+            "I013",
+            "I042",
+            "I044"
+          ],
+          "note": "Matching distinctive background and prop."
+        }
+      ]
+    },
+    {
+      "group_id": "G06",
+      "name": "Dell laptop keyboard",
+      "evidence": "Same distinctive Dell laptop keyboard / palm-rest context; close and wide angles remain together.",
+      "review_priority": "Check I037, which was in the original test folder, against I014-I016.",
+      "subgroups": [
+        {
+          "name": "Keyboard",
+          "image_ids": [
+            "I014",
+            "I015",
+            "I016",
+            "I037"
+          ],
+          "note": "Repeated keyboard keys, branding and laptop context."
+        }
+      ]
+    },
+    {
+      "group_id": "G07",
+      "name": "Backlit hand and doorway views",
+      "evidence": "I017 and I020 clearly share the exposed-bulb wall setup. I038 is another strongly backlit hand/doorway view and is merged as a precaution.",
+      "review_priority": "The I038 doorway-to-bulb link is uncertain; conservatively keeping it on the same side is safer than treating it as an independent scene.",
+      "subgroups": [
+        {
+          "name": "Exposed bulb",
+          "image_ids": [
+            "I017",
+            "I020"
+          ],
+          "note": "Matching bulb/wall context."
+        },
+        {
+          "name": "Backlit doorway close-up",
+          "image_ids": [
+            "I038"
+          ],
+          "note": "Possible related capture context; conservatively merged."
+        }
+      ]
+    },
+    {
+      "group_id": "G08",
+      "name": "Pink CHERRY tray",
+      "evidence": "Repeated pink tray / container and CHERRY label; close-ups and the plastic-bag view are kept together.",
+      "review_priority": "Check I034, where a bag partially covers the same tray.",
+      "subgroups": [
+        {
+          "name": "Pink tray",
+          "image_ids": [
+            "I018",
+            "I019",
+            "I029",
+            "I030",
+            "I033",
+            "I034"
+          ],
+          "note": "Shared tray and CHERRY label where visible."
+        }
+      ]
+    },
+    {
+      "group_id": "G09",
+      "name": "White cardboard packaging",
+      "evidence": "Matching white cardboard / printed-code packaging and dark wooden background.",
+      "review_priority": "Check the packaging cues, not just the white background.",
+      "subgroups": [
+        {
+          "name": "White packaging",
+          "image_ids": [
+            "I025",
+            "I027"
+          ],
+          "note": "Matching cardboard scene from different distances."
+        }
+      ]
+    },
+    {
+      "group_id": "G10",
+      "name": "Gray stone-slab close-ups",
+      "evidence": "Similar mottled gray stone / slab surface in I028 and I092, conservatively grouped.",
+      "review_priority": "Check this provisional surface match; distinguish it from the scratched floor in G01.",
+      "subgroups": [
+        {
+          "name": "Gray stone slab",
+          "image_ids": [
+            "I028",
+            "I092"
+          ],
+          "note": "Provisional background link; do not claim a verified capture session."
+        }
+      ]
+    },
+    {
+      "group_id": "G11",
+      "name": "Kitchen context - conservative supergroup",
+      "evidence": "A distinctive beige veined countertop, arc-patterned tiles, steel vessel and blue-printed bag link multiple kitchen subscenes. Fridge-rack, grain-bowl and tight steel-vessel views lack full context, so they are included conservatively rather than treated as independent captures.",
+      "review_priority": "This is a broad leakage-prevention family, NOT a claim that all 58 images are one verified scene. All known multi-egg photos are concentrated here; holding this whole family out would exceed a 22-image target. Record the resulting held-out scene/instance-count coverage limitation.",
+      "subgroups": [
+        {
+          "name": "Beige countertop / multiple eggs",
+          "image_ids": [
+            "I024",
+            "I047",
+            "I048",
+            "I050",
+            "I052",
+            "I062",
+            "I068",
+            "I079",
+            "I080",
+            "I081",
+            "I083",
+            "I086",
+            "I088",
+            "I090",
+            "I094"
+          ],
+          "note": "Matching veined countertop and neighboring stove edge."
+        },
+        {
+          "name": "Arc-patterned tile / hand / colored lids",
+          "image_ids": [
+            "I026",
+            "I049",
+            "I095",
+            "I096",
+            "I097",
+            "I098",
+            "I102",
+            "I109"
+          ],
+          "note": "Distinctive tile pattern connects lid and handheld views to the kitchen context."
+        },
+        {
+          "name": "White appliance and blue-printed bag",
+          "image_ids": [
+            "I051",
+            "I053",
+            "I056",
+            "I058",
+            "I059",
+            "I070",
+            "I072",
+            "I089"
+          ],
+          "note": "Same printed bag; tiled kitchen visible in related views."
+        },
+        {
+          "name": "Orange floral container and wall",
+          "image_ids": [
+            "I055",
+            "I057",
+            "I067",
+            "I074",
+            "I077",
+            "I085",
+            "I087"
+          ],
+          "note": "Repeated orange floral container and adjacent wall."
+        },
+        {
+          "name": "Steel water / boiling pot",
+          "image_ids": [
+            "I060",
+            "I061",
+            "I071",
+            "I075",
+            "I076",
+            "I082",
+            "I091",
+            "I093"
+          ],
+          "note": "Repeated pot, stove and tiled background; includes both Unlabeled-folder images."
+        },
+        {
+          "name": "Silver foil packets on countertop",
+          "image_ids": [
+            "I065",
+            "I066",
+            "I078",
+            "I084"
+          ],
+          "note": "Repeated foil packets on the same distinctive countertop."
+        },
+        {
+          "name": "White refrigerator egg rack",
+          "image_ids": [
+            "I036",
+            "I063",
+            "I064"
+          ],
+          "note": "Clear within-series match; wider kitchen-session relation is uncertain, so merge conservatively."
+        },
+        {
+          "name": "Egg on white grains",
+          "image_ids": [
+            "I054",
+            "I069",
+            "I073"
+          ],
+          "note": "Clear within-series match; possible related kitchen capture, merged conservatively."
+        },
+        {
+          "name": "Tight single-egg steel-vessel views",
+          "image_ids": [
+            "I099",
+            "I105"
+          ],
+          "note": "The two vessel views are not proven to be the same utensil. Their relation to the broader kitchen set is also uncertain; merge as a precaution, not as a verified match."
+        }
+      ]
+    },
+    {
+      "group_id": "G12",
+      "name": "Green red black woven cloth",
+      "evidence": "Matching green/red/black woven fabric with repeated line pattern.",
+      "review_priority": "Check I100, I108 and I110 together.",
+      "subgroups": [
+        {
+          "name": "Woven cloth",
+          "image_ids": [
+            "I100",
+            "I108",
+            "I110"
+          ],
+          "note": "Matching distinctive textile."
+        }
+      ]
+    },
+    {
+      "group_id": "G13",
+      "name": "Handheld egg against plain light wall",
+      "evidence": "Similar plain light wall / hand context in I101 and I104; merged conservatively.",
+      "review_priority": "Plain walls provide weak provenance cues. Keep together, and do not claim independence from all other handheld scenes.",
+      "subgroups": [
+        {
+          "name": "Plain-wall handheld views",
+          "image_ids": [
+            "I101",
+            "I104"
+          ],
+          "note": "Provisional context family, not verified person/egg identity."
+        }
+      ]
+    },
+    {
+      "group_id": "G14",
+      "name": "Handheld egg by green molded door",
+      "evidence": "Matching pale green molded door/panel design behind the hand.",
+      "review_priority": "Check I103, I106 and I107 together, despite original train/test folders.",
+      "subgroups": [
+        {
+          "name": "Green molded door",
+          "image_ids": [
+            "I103",
+            "I106",
+            "I107"
+          ],
+          "note": "Distinctive repeating door/panel details."
+        }
+      ]
+    }
+  ]
+}

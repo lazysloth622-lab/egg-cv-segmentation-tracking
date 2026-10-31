@@ -1,0 +1,21 @@
+{
+  "policy_version": "visible_egg_pixels_only_v1",
+  "status": "HUMAN_REVIEWED_SILVER_NOT_INDEPENDENT_GOLD",
+  "model_type": "vit_b",
+  "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+  "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "generator": {
+    "points_per_side": 16,
+    "points_per_batch": 64,
+    "pred_iou_thresh": 0.72,
+    "stability_score_thresh": 0.78,
+    "stability_score_offset": 1.0,
+    "box_nms_thresh": 0.7,
+    "crop_n_layers": 0,
+    "min_mask_region_area": 80
+  },
+  "split_sha256": "04321e64df5e42c29da7001767dccab9cc9c1abafacf8e3ea4431dcb8e8efa32",
+  "rule": "Label every visible egg's visible pixels; exclude hand/background. Do not complete hidden regions. Record each prompt and review decision. Empty masks are permitted only after explicit EMPTY confirmation.",
+  "eval_use": "Eval references may be scored only after the classical algorithm is frozen; never used for prompts, tuning or model selection.",
+  "ai_assistance": "Arena.ai assisted code and candidate interface; human selection/review and real SAM execution required."
+}

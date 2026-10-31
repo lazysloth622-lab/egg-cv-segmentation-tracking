@@ -1,0 +1,15 @@
+{
+  "image_id": "I091",
+  "split": "dev",
+  "relative_path": "train/Unlabeled/not_damaged_145_jpg.rf.5147bfde42f30a27504377fd5ef13b05.jpg",
+  "raw_sha256": "79535b5521e4d6e27784a657d09daa07daa2a80de9b71fc0f524c7a99d5fd3a5",
+  "status": "reviewed_empty",
+  "reviewed_at": "2026-10-29T11:12:15.579665+00:00",
+  "label_policy": "visible_egg_pixels_only_v1",
+  "instances": [],
+  "union_area": 0,
+  "mask_sha256": "8262cd6f839c5f0b60f3534ebd053b23594aaefc88f1bd094ffc370ce538cd99",
+  "instance_mask_sha256": "d9dd405478c5f5e202852bcc7dcec7bb45c35a053eed1647ef9c934de764a9f1",
+  "mask_relative_path": "references/masks/I091.png",
+  "instance_mask_relative_path": "references/instances/I091.png"
+}

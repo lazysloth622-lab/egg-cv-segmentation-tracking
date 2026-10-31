@@ -1,0 +1,55 @@
+{
+  "image_id": "I041",
+  "split": "dev",
+  "relative_path": "train/egg/not_damaged_50_jpg.rf.b9e65c2fcdb435269f67c9d7ade8ca89.jpg",
+  "raw_sha256": "86df5075d97b64c1f4f638047df366ddb92d6fb037d650936a73c9a0ffa41665",
+  "status": "reviewed",
+  "reviewed_at": "2026-10-29T09:43:54.552983+00:00",
+  "label_policy": "visible_egg_pixels_only_v1",
+  "instances": [
+    {
+      "instance_index": 1,
+      "area": 36697,
+      "bbox_xyxy": [
+        159,
+        182,
+        408,
+        369
+      ],
+      "prompt": {
+        "source": "human_selected_SAM_grid_candidate",
+        "point_coords": [
+          [
+            277.0,
+            275.0
+          ]
+        ],
+        "point_labels": [
+          1
+        ],
+        "box_xyxy": [
+          159.0,
+          182.0,
+          408.0,
+          369.0
+        ],
+        "grid_candidate_point_coords": [
+          [
+            340.0,
+            260.0
+          ]
+        ],
+        "candidate_predicted_iou": 1.0220342874526978,
+        "candidate_stability_score": 0.992490828037262,
+        "selected_output_index": 1,
+        "refined_mask_score": 1.0031007528305054,
+        "seed_agreement_iou": 0.9975748658001581
+      }
+    }
+  ],
+  "union_area": 36697,
+  "mask_sha256": "3aa9570ddf6c5c2581aa2557ce471390e3fe8c9a8411b3ab9eefb851e39fcfff",
+  "instance_mask_sha256": "61d13a8adb341cdcc0dc8f6d2674aa5eb22bdbd83fd1d7c821a6597b7f0e4c9a",
+  "mask_relative_path": "references/masks/I041.png",
+  "instance_mask_relative_path": "references/instances/I041.png"
+}

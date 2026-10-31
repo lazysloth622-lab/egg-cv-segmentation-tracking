@@ -1,0 +1,62 @@
+{
+  "status": "DEV_SELECTED_NOT_YET_EVAL_FROZEN",
+  "selected_at": "2026-10-29T12:00:17.803146+00:00",
+  "selection_rule": "Maximum macro DEV mean IoU; ties: mean Dice, then micro IoU. No eval data used.",
+  "selected_config_id": "C08_grabcut_center",
+  "config": {
+    "center_patch": 0.16,
+    "center_weight": 1.0,
+    "close_kernel": 5,
+    "component_filter": true,
+    "grabcut_iters": 4,
+    "lab_scales": [
+      45.0,
+      22.0,
+      22.0
+    ],
+    "lab_threshold": 1.2,
+    "max_area_frac": 0.65,
+    "max_components": 2,
+    "max_side": 384,
+    "method": "grabcut_rect",
+    "min_area_frac": 0.001,
+    "open_kernel": 3,
+    "rect_scale": 0.5,
+    "sat_max": 80,
+    "sure_bg_kernel": 15,
+    "sure_fg_kernel": 9,
+    "val_min": 70,
+    "warm": false,
+    "warm_hue_max": 35,
+    "warm_hue_min": 3,
+    "warm_sat_max": 180
+  },
+  "dev_metrics": {
+    "config_id": "C08_grabcut_center",
+    "method": "grabcut_rect",
+    "images": 88,
+    "mean_iou": 0.5106525912499186,
+    "median_iou": 0.5738678378781805,
+    "mean_dice": 0.5974987674426621,
+    "mean_precision": 0.6367093001839597,
+    "mean_recall": 0.6182230181085854,
+    "micro_iou": 0.45882454200090117,
+    "micro_dice": 0.6290332096711021,
+    "micro_precision": 0.6763717494168136,
+    "micro_recall": 0.5878875826939779,
+    "empty_predictions": 5,
+    "errors": 0,
+    "elapsed_seconds": 79.00495052337646,
+    "config_json": "{\"center_patch\": 0.16, \"center_weight\": 1.0, \"close_kernel\": 5, \"component_filter\": true, \"grabcut_iters\": 4, \"lab_scales\": [45.0, 22.0, 22.0], \"lab_threshold\": 1.2, \"max_area_frac\": 0.65, \"max_components\": 2, \"max_side\": 384, \"method\": \"grabcut_rect\", \"min_area_frac\": 0.001, \"open_kernel\": 3, \"rect_scale\": 0.5, \"sat_max\": 80, \"sure_bg_kernel\": 15, \"sure_fg_kernel\": 9, \"val_min\": 70, \"warm\": false, \"warm_hue_max\": 35, \"warm_hue_min\": 3, \"warm_sat_max\": 180}"
+  },
+  "split_sha256": "04321e64df5e42c29da7001767dccab9cc9c1abafacf8e3ea4431dcb8e8efa32",
+  "reference_policy_sha256": "69961374225600cb8a542576f7b53397d5952198e9175f66b2aeb107fe9e4eba",
+  "code_sha256": {
+    "classical_utils.py": "2086c2351783e27996bb7f16804680d211bd6c63e8dad12e9a31c885fb8f27da",
+    "07_classical_dev_experiments.py": "0a75f31e6adae9ed9449c219c23ab1514d293c24722cedfe08c0e393e43dc3ac"
+  },
+  "dev_summary_sha256": "6c03b29c20db0c4f26f6028fa4feefbe7c328d791d5903d1564a2aca5b3a4722",
+  "dev_per_image_sha256": "3fd315a24d9b9f8ff6b4e06649f9f415802391021e89a3d49609fc46146bc04c",
+  "empty_metric_policy": "Both-empty=1; all other zero-division cases=0.",
+  "ai_assistance": "Classical code and fixed trial grid developed with Arena.ai; actual dev execution selects the config."
+}

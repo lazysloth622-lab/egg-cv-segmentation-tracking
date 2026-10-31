@@ -1,0 +1,88 @@
+{
+  "image_id": "I081",
+  "split": "dev",
+  "relative_path": "train/egg/not_damaged_134_jpg.rf.fb4e9c442527db9e71d4a95584773fa2.jpg",
+  "raw_sha256": "43993a8007ff391f1e48a904984ebe7963a4a7d4b3dec58c2397aecc9cb954a6",
+  "status": "reviewed",
+  "reviewed_at": "2026-10-29T10:58:32.016384+00:00",
+  "label_policy": "visible_egg_pixels_only_v1",
+  "instances": [
+    {
+      "instance_index": 1,
+      "area": 36209,
+      "bbox_xyxy": [
+        3,
+        345,
+        296,
+        505
+      ],
+      "prompt": {
+        "source": "human_box_prompt",
+        "point_coords": [],
+        "point_labels": [],
+        "box_xyxy": [
+          0.0,
+          320.0,
+          300.0,
+          505.0
+        ],
+        "selected_output_index": 1,
+        "refined_mask_score": 1.0055081844329834,
+        "runtime_device": "cpu"
+      }
+    },
+    {
+      "instance_index": 2,
+      "area": 21913,
+      "bbox_xyxy": [
+        354,
+        92,
+        525,
+        257
+      ],
+      "prompt": {
+        "source": "human_box_prompt",
+        "point_coords": [],
+        "point_labels": [],
+        "box_xyxy": [
+          340.0,
+          85.0,
+          530.0,
+          260.0
+        ],
+        "selected_output_index": 1,
+        "refined_mask_score": 1.01433527469635,
+        "runtime_device": "cpu"
+      }
+    },
+    {
+      "instance_index": 3,
+      "area": 17958,
+      "bbox_xyxy": [
+        432,
+        267,
+        605,
+        400
+      ],
+      "prompt": {
+        "source": "human_box_prompt",
+        "point_coords": [],
+        "point_labels": [],
+        "box_xyxy": [
+          410.0,
+          260.0,
+          610.0,
+          400.0
+        ],
+        "selected_output_index": 1,
+        "refined_mask_score": 1.0135526657104492,
+        "runtime_device": "cpu"
+      }
+    }
+  ],
+  "union_area": 76080,
+  "mask_sha256": "cdb4057b6792190142d3b0d8ac75d987e9afaa5e2e8fbe30ecf49713884f8379",
+  "instance_mask_sha256": "9810d9e9d8f5f37eb2f92529be62baf17eaee13a8faf39637b25199ff3ef6323",
+  "mask_relative_path": "references/masks/I081.png",
+  "instance_mask_relative_path": "references/instances/I081.png"
+}
