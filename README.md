@@ -51,4 +51,4 @@ Raw images, the 375 MB checkpoint and large videos are intentionally excluded fr
 
 ## AI disclosure
 
-Arena.ai assisted planning, draft visual grouping, code and documentation. The user executed, reviewed and remains responsible for verification.
+Arena.ai assisted with planning, coding, debugging, and documentation.
